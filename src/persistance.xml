@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence>
+    
+    <persistence-unit name="unit.persistance.singletonJpaProvider">
+   		 <provider>fr.isima.ejb.singletonTest.EntityManagerImplementation</provider>
+    </persistence-unit>
+    <persistence-unit name="unit.persistance.TransactionJpaProvider">
+   		 <provider>fr.isima.ejb.transactionTest.EntityManagerTransactionImp</provider>
+    </persistence-unit>
+    
+    <persistence-unit name="unit.persistance.statlessJpaProvider">
+   		 <provider>fr.isima.ejb.statlessTest.EntityManagerMySQL</provider>
+    </persistence-unit>
+    
+    <persistence-unit name="unit.persistance.statefulJpaProvider">
+   		 <provider>fr.isima.ejb.statefulTest.EntityManagerNoSQL</provider>
+    </persistence-unit>
+    
+  
+    
+</persistence>
